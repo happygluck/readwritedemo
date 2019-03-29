@@ -4,7 +4,7 @@ Configuration:
   Properties:
     Property:
       - name: log.path
-        value: /tmp/logs
+        value: /home/logs
       - name: project.name
         value: demoRead
 
