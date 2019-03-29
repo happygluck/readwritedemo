@@ -1,0 +1,12 @@
+version: "3"
+services:
+  webtest:
+    container_name: webtest
+    image: "webtest" 
+    build: ./docker/.
+    ports:
+      - "11002:11002"
+    volumes:
+      - "/home/logs:/home/logs"
+    restart: always
+    network_mode: "host"
