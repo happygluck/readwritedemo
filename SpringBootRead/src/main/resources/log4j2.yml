@@ -17,7 +17,7 @@ Configuration:
       - name: INFO
         ignoreExceptions: false
         fileName: ${log.path}/${project.name}/Info/info.log
-        filePattern: ${log.path}/${project.name}/Info/$${date:yyyy-MM}/%d{yyyy-MM-dd}-%i.log.tar.gz
+        filePattern: ${log.path}/${project.name}/Info/$${date:yyyy-MM}/%d{yyyy-MM-dd}-%i.log.zip
         ThresholdFilter:
           level: error
           onMatch: DENY
@@ -32,7 +32,7 @@ Configuration:
       - name: ERROR
         ignoreExceptions: false
         fileName: ${log.path}/${project.name}/Error/error.log
-        filePattern: ${log.path}/${project.name}/Error/$${date:yyyy-MM}/%d{yyyy-MM-dd}-%i.log.tar.gz
+        filePattern: ${log.path}/${project.name}/Error/$${date:yyyy-MM}/%d{yyyy-MM-dd}-%i.log.zip
         ThresholdFilter:
           level: error
           onMatch: ACCEPT
